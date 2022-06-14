@@ -1,0 +1,2 @@
+async function e(e,t){const n=Math.random()>.3;return new Promise(((o,a)=>{setTimeout((()=>{n?o(`SUCECSS ${e}`):a(`ERROR ${e}`)}),t)}))}document.querySelector("form").addEventListener("submit",(async function(t){t.preventDefault();const{elements:{delay:n,step:o,amount:a}}=t.currentTarget;for(let t=1;t<=a.value;t++)await e(t,1==t?n.value:o.value).then((e=>{console.log(e)})).catch((e=>{console.log(e)}))}));
+//# sourceMappingURL=03-promises.90799317.js.map
